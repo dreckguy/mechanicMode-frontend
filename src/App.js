@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-
 import { simpleAction } from './actions/simpleAction'
+
+import Container from 'react-bootstrap/lib/Container'
+import Row from 'react-bootstrap/lib/Row'
+import Col from 'react-bootstrap/lib/Col'
+
+
+
 
 
 const mapStateToProps = state => ({
@@ -22,20 +28,21 @@ class App extends Component {
   
  render() {
   return (
-   <div className="App">
-    <header className="App-header">
-     <h1 className="App-title">Welcome to React</h1>
-    </header>
-    <p className="App-intro">
-    <button onClick={this.simpleAction}>Test redux action</button>
-    </p>
-    <hr/>
-    <pre>
- {
-  JSON.stringify(this.props)
- }
-</pre>
-   </div>
+    <Container>
+  <Row>
+    <Col>1 of 1</Col>
+  </Row>
+  <Row>
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+  <Row>
+    <Col>1 of 3</Col>
+    <Col>2 of 3</Col>
+    <Col>3 of 3</Col>
+  </Row>
+</Container>
    
   );
  }
