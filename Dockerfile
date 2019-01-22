@@ -12,5 +12,7 @@ RUN npm run build
 # production environment
 FROM nginx:1.15.8-alpine
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+ENV BACKEND_ADDRESS=""
+ENV SOCKET_PORT=""
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
