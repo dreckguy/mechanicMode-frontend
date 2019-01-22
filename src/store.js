@@ -1,24 +1,25 @@
-import { createStore} from 'redux';
-import rootReducer from './reducers/rootReducer';
+import { createStore, applyMiddleware } from 'redux';
+import createSocketIoMiddleware from 'redux-socket.io';
+import io from 'socket.io-client';
 
-const preloadedState = {
-  msg: "First Message"
-}
 
 export default function configureStore() {
 
-  const store = createStore(rootReducer, preloadedState)
-  
-  let count = 0
-  
-  setInterval(() => {
-
-    store.dispatch({type:"FETCH_DATA",
-    id: ++count
-  })
-
-    
-  }, 1000);
+  let socket = io('http://localhost:8081');
+let socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
+function reducer(state = {}, action){
+  switch(action.type){
+    case 'message':
+      return Object.assign({}, {message:action.data});
+    default:
+      return state;
+  }
+}
+let store = applyMiddleware(socketIoMiddleware)(createStore)(reducer);
+store.subscribe(()=>{
+  console.log('new client state', store.getState());
+});
+store.dispatch({type:'server/hello', data:'Hello!'});
 
   return store
 }
