@@ -4,7 +4,7 @@ import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
 import mainReducer from './reducers/mainReducer'
 
-const BACKEND_ADDRESS = process.env.BACKEND_ADDRESS || 'localhost'
+const BACKEND_ADDRESS = process.env.BACKEND_ADDRESS || '18.197.133.253'
 const SOCKET_PORT = process.env.SOCKET_PORT || '8081'
 
 
