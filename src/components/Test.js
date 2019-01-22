@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux'
 
 const mapStateToProps = (state, ownProps) => ({
-    msg: state.counter
+    data: state.data
 })
 
 class Test extends Component{
@@ -10,7 +10,7 @@ class Test extends Component{
     render(){
         return (<div>
             <h1>Test</h1>
-            <h2>{this.props.msg}</h2>
+            <p>{JSON.stringify(this.props.data)}</p>
         </div>)
     }
 
