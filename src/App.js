@@ -4,7 +4,7 @@ import './App.css';
 import Container from 'react-bootstrap/lib/Container'
 import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
-import Test from './components/Test'
+import Test from './components/Test/Test'
 
 
 class App extends Component {

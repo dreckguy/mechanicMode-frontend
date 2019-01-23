@@ -10,7 +10,7 @@ require('dotenv').config({ path: './.env' })
 const BACKEND_ADDRESS = process.env.REACT_APP_BACKEND_ADDRESS
 const SOCKET_PORT = process.env.REACT_APP_SOCKET_PORT
 
-console.log(process.env)
+const preloadedState ={data:{id:0}}
 
 
 
@@ -19,7 +19,8 @@ export default function configureStore() {
 let socket = io(`http://${BACKEND_ADDRESS}:${SOCKET_PORT}`);
 let socketIoMiddleware = createSocketIoMiddleware(socket, "server/");
 
-let store = applyMiddleware(socketIoMiddleware)(createStore)(mainReducer);
+let store = createStore(
+  mainReducer, preloadedState,applyMiddleware(socketIoMiddleware));
 store.dispatch({type:'server/hello', data:'Hello!'});
 
   return store
