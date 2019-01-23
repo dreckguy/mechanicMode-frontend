@@ -12,5 +12,6 @@ RUN npm run build
 # production environment
 FROM nginx:1.15.8-alpine
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
+ENV REACT_APP_BACKEND_ADDRESS=18.197.133.253
 EXPOSE 80 8081
 CMD ["nginx", "-g", "daemon off;"]
