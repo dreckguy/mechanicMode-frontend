@@ -1,9 +1,9 @@
 import React,{ Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import Container from 'react-bootstrap/lib/Container'
-import Row from 'react-bootstrap/lib/Row'
-import Col from 'react-bootstrap/lib/Col'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Test from './components/Test/Test'
 
 
