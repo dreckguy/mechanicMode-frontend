@@ -12,7 +12,6 @@ class Test extends Component{
     render(){
         return (<div>
             <h1>Griiip Test</h1>
-            <h2> Data Counter: {this.props.data.id}</h2>
             <p>{JSON.stringify(this.props.data)}</p>
         </div>)
     }
