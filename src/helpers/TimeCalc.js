@@ -1,8 +1,13 @@
 export default class TimeCalc {
 
      static getLatency(start){
+        let now = new Date() 
+        let then = new Date(start)
+        let offset = then.getTimezoneOffset() * 60 * 1000;
 
-        let duration = new Date(Date.now() - new Date(start).getTime());
-        return `${duration.getMinutes()}:${duration.getSeconds()}:${duration.getMilliseconds()}`
+        let nowTime = now.getTime();
+        let thenTime = then.getTime() - offset;
+
+        return nowTime - thenTime;
     }
 }
