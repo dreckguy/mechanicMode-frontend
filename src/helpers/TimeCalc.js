@@ -1,8 +1,8 @@
 export default class TimeCalc {
 
-     static getLatency(){
+     static getLatency(start){
 
-        return "8";
-
+        let duration = new Date(Date.now() - new Date(start).getTime());
+        return `${duration.getMinutes()}:${duration.getSeconds()}:${duration.getMilliseconds()}`
     }
 }
