@@ -17,26 +17,12 @@ const mapStateToProps = (state, ownProps) => ({
 class Dashboard extends Component{
 
     render(){
-        console.log(this.props.data)
         return (<Container>
-            <Row>
-            <Col><ControlConsole/></Col>
-            <Col><RaceMap lat={this.props.data.gps_lat} long={this.props.data.gps_long}/></Col>
-            </Row>
+            <Row><Col><ControlConsole/></Col><Col><RaceMap lat={this.props.data.gps_lat} long={this.props.data.gps_long}/></Col></Row>
+            <Row><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col></Row>
+            <Row><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col></Row>
 
-            <Row>
-            <Col><ChartMonitor/></Col>
-            <Col><ChartMonitor/></Col>
-            <Col><ChartMonitor/></Col>
-            </Row> 
-            
-            <Row>
-            <Col><ChartMonitor/></Col>
-            <Col><ChartMonitor/></Col>
-            <Col><ChartMonitor/></Col>
-            </Row>
-            </Container>
-            )
+            </Container>)
     }
 
     componentDidMount() {
