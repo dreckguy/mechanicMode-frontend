@@ -15,7 +15,7 @@ export default class ChartMonitor
 
     componentDidMount() {
 
-        const waterEngineTempData = fullData.map((data)=>{
+        const fieldValues = fullData.map((data)=>{
             let time = Date.parse(data.Timestamp);
             let temprature = parseFloat(data[this.props.dataField])
             return [time,temprature];
@@ -24,7 +24,7 @@ export default class ChartMonitor
 
 
         
-        const g = new Dygraph(this.refs.chart,waterEngineTempData
+        const g = new Dygraph(this.refs.chart,fieldValues
     ,{
         labels: [ "Time(ms)",this.props.label]
       });
