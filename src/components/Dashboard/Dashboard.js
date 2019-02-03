@@ -18,16 +18,14 @@ class Dashboard extends Component{
 
     render(){
         return (<Container>
-            <Row><Col><ControlConsole/></Col><Col><RaceMap lat={this.props.data.gps_lat} long={this.props.data.gps_long}/></Col></Row>
-            <Row><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col></Row>
-            <Row><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col></Row>
+            {/* <Row><Col><ControlConsole/></Col><Col>{<RaceMap lat={this.props.data.gps_lat} long={this.props.data.gps_long}/>}</Col></Row>
+            <Row><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col><Col><ChartMonitor/></Col></Row> */}
+            <Row><Col><ChartMonitor/></Col>{/* <Col><ChartMonitor/></Col><Col><ChartMonitor/></Col> */}</Row>
 
             </Container>)
     }
 
     componentDidMount() {
-
-        console.log(JSON.stringify(this.props.data))
 
     }
 

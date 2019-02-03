@@ -5,6 +5,7 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "dotenv": "^6.2.0",
+    "dygraphs": "^2.1.0",
     "google-maps-react": "^2.0.2",
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.5",
