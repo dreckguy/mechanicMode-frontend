@@ -1,0 +1,1 @@
+Set-Variable -Name "IMAGE" -Value "dreckguy/mechanicmode-frontend"
