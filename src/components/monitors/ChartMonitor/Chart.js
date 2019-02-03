@@ -15,7 +15,12 @@ export default class Chart extends Component {
         "2008-05-07,75\n" +
         "2008-05-08,70\n" +
         "2008-05-09,80\n"
-    , {});
+    ,{
+        drawPoints: false,    
+        valueRange: [0, 116],
+        includeZero: false,
+        labels: ['Time', 'Eng. Water Temp']
+      });
 
     }
 }
