@@ -1,5 +1,7 @@
 import _ from 'lodash'
 
+const MAX_DATA_POINTS = process.env.REACT_APP_MAX_DATA_POINTS;
+
 export default (state = {}, action) => {
   switch(action.type){
     case 'FETCH_DATA':
@@ -12,7 +14,12 @@ export default (state = {}, action) => {
         }
 
         values[valueType].push(newData[valueType])
+        if(values[valueType].length>MAX_DATA_POINTS){
+          values[valueType].shift();
+        }
       }
+
+      console.log(values);
   }
       return Object.assign({}, {...state, data:values});
     default:
