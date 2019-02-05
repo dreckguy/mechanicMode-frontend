@@ -19,7 +19,6 @@ export default (state = {}, action) => {
         }
       }
 
-      console.log(values);
   }
       return Object.assign({}, {...state, data:values});
     default:
