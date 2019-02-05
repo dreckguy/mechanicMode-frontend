@@ -7,12 +7,8 @@ const mapStateToProps = (state, ownProps) => {
     const values = state.data[ownProps.dataField];
     if(Array.isArray(values)){
 
-        const last = parseInt(values[values.length - 1]);
-        console.log(values);
-        
-        console.log(`last: ${last}`);
+        const last = parseInt(values[values.length - 1]);        
         return {value:last}
-    
     }else{
         return {value:0}
     }
