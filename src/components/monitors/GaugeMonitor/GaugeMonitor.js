@@ -1,17 +1,14 @@
 import {connect} from 'react-redux'
 import React, { Component } from 'react';
+import _ from 'lodash';
 import ReactSpeedometer from "react-d3-speedometer";
-import { isArray, isNumber } from 'util';
+
 
 const mapStateToProps = (state, ownProps) => {
-    const values = state.data[ownProps.dataField];
-    if(Array.isArray(values)){
-
-        const last = parseInt(values[values.length - 1]);        
-        return {value:last}
-    }else{
-        return {value:0}
-    }
+    const values = state.data;
+    const last = _.cloneDeep(values[values.length-1]);
+    const val = parseInt(last[ownProps.dataField]);
+    return {value:val}
 }
 
 
