@@ -4,47 +4,50 @@ import Dygraph from 'dygraphs';
 import _ from 'lodash';
 import helper from '../../../helpers/ArrayHelper';
 import 'dygraphs/dist/dygraph.min.css';
-import yarinLap from '../../../data/yarin_lap.json';
-const fullData = yarinLap.data;
 
 let chart;
 
+
+
 const mapStateToProps = (state, ownProps) => {
 
-    
-    const dynamicValues = state.data.map((data)=>{
+    let index = 1;
+    const values = state.data.map((data)=>{
 
-        let time = Date.parse(data.Timestamp);
+
+        //let time = Date.parse(data.Timestamp);
+        let time = index ;
         let value = parseFloat(data[ownProps.dataField]);
+        index++;
         return[time,value];
     });
 
-    
+    console.log(values);
 
-    
-
-
-    const staticValues = fullData.map((data)=>{
-        let time = Date.parse(data.Timestamp);
-        let value = parseFloat(data[ownProps.dataField])
-        return [time,value];
-    
-    });
-
-    return {data:dynamicValues}
+    return {data:values}
 }
 
 
 class ChartMonitor extends Component {
 
+    constructor(props){
+        super(props);
+
+        this.ref = props.dataField + " chart";
+    }
+
+    
+    
+
+
     render() {
-        return <div ref="chart"></div>;
+        return <div ref={this.ref}></div>;
     }
 
 
     componentDidMount() {
         
-          chart = new Dygraph(this.refs.chart,this.props.data
+          chart = new Dygraph(this.refs[this.ref],this.props.data
     ,{
         labels: [ "Time (ms)",this.props.label],
       }); 
