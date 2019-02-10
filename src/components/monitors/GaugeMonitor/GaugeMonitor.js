@@ -5,9 +5,13 @@ import ReactSpeedometer from "react-d3-speedometer";
 
 
 const mapStateToProps = (state, ownProps) => {
-    const values = state.data;
-    const last = _.cloneDeep(values[values.length-1]);
-    const val = parseInt(last[ownProps.dataField]);
+
+    const last = state.last;
+    if(!last){
+        return {value:0};
+    }
+    const val = parseInt(state.last[ownProps.dataField]);
+    
     return {value:val}
 }
 

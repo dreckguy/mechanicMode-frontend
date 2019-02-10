@@ -2,69 +2,60 @@ import {connect} from 'react-redux'
 import React, { Component} from 'react';
 import Dygraph from 'dygraphs';
 import _ from 'lodash';
-import helper from '../../../helpers/ArrayHelper';
-import 'dygraphs/dist/dygraph.min.css';
-
-let chart;
-
-
 
 const mapStateToProps = (state, ownProps) => {
 
-    let index = 1;
-    const values = state.data.map((data)=>{
+    let values = state.data.map((data)=>{
 
 
-        //let time = Date.parse(data.Timestamp);
-        let time = index ;
+        let time = data.time;
         let value = parseFloat(data[ownProps.dataField]);
-        index++;
         return[time,value];
     });
 
-    console.log(values);
-
-    return {data:values}
+    return {data:values, last:values[values.length-1]}
 }
 
-
-class ChartMonitor extends Component {
+ class ChartMonitor extends Component {
 
     constructor(props){
         super(props);
 
-        this.ref = props.dataField + " chart";
+        this.state = {
+            chart: null,
+        }
     }
-
-    
-    
 
 
     render() {
-        return <div ref={this.ref}></div>;
+        return <div ref="chart"></div>;
     }
 
 
     componentDidMount() {
-        
-          chart = new Dygraph(this.refs[this.ref],this.props.data
-    ,{
-        labels: [ "Time (ms)",this.props.label],
-      }); 
+
+
+
+            this.state.chart = new Dygraph(this.refs.chart,this.props.data
+                ,{
+                    labels: [ "Time (ms)",this.props.label],
+                    drawPoints: true,
+                    //dateWindow: getCurrentTimeRange(),
+                    //axes:{x:{valueRange:getCurrentTimeRange()}}        
+                    valueRange:[0,this.props.max]
+                  });
 
     }
 
-    componentDidUpdate(){
-        chart.updateOptions( { 'file':this.props.data} );
-
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState){
+    componentDidUpdate(prevProps, prevState, snapshot){
         
-
-        return true;
+        this.state.chart.updateOptions({ 
+            'file':this.props.data,
+            //dateWindow: getCurrentTimeRange(),
+            //axes:{x:{valueRange:getCurrentTimeRange()}}        
+ 
+        });
     }
 }
 
-export default connect(mapStateToProps)(ChartMonitor)
+export default  connect(mapStateToProps)(ChartMonitor);
