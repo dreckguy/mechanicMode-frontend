@@ -1,5 +1,3 @@
-import _ from 'lodash'
-
 const MAX_DATA_POINTS = process.env.REACT_APP_MAX_DATA_POINTS;
 
 export default (state = {}, action) => {

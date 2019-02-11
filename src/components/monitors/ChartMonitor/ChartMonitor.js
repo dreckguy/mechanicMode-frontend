@@ -1,7 +1,6 @@
 import {connect} from 'react-redux'
 import React, { Component} from 'react';
 import Dygraph from 'dygraphs';
-import _ from 'lodash';
 
 const mapStateToProps = (state, ownProps) => {
 
@@ -39,7 +38,7 @@ const mapStateToProps = (state, ownProps) => {
             this.state.chart = new Dygraph(this.refs.chart,this.props.data
                 ,{
                     labels: [ "Time (ms)",this.props.label],
-                    drawPoints: true,
+                    //drawPoints: true,
                     //dateWindow: getCurrentTimeRange(),
                     //axes:{x:{valueRange:getCurrentTimeRange()}}        
                     valueRange:[0,this.props.max]

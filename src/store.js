@@ -4,9 +4,6 @@ import createSocketIoMiddleware from 'redux-socket.io';
 import io from 'socket.io-client';
 import mainReducer from './reducers/mainReducer'
 
-import yarinLap from './data/yarin_lap.json';
-const staticData = yarinLap.data;
-
 require('dotenv').config({ path: './.env' })
 
 
