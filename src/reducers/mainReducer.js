@@ -13,7 +13,7 @@ export default (state = {}, action) => {
 
     if(newData.time>last.time){
 
-      console.log("push new data!");
+      //console.log("push new data!");
       let data = state.data;
       data.push(newData);
       last = newData;
@@ -25,7 +25,7 @@ export default (state = {}, action) => {
       return {data:data,last:last};
 
     }else{
-      console.log(`got old data`);
+      //console.log(`got old data`);
     
       return state;
     }

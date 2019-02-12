@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import RaceMap from '../monitors/RaceMap/RaceMap'
+import ChartsPanel from '../ChartsPanel' 
 export default class Test extends Component{
 
     render(){
 
         return (<div>
-                <RaceMap/>
+                <ChartsPanel/>
         </div>)
 
     }

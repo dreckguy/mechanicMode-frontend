@@ -4,9 +4,10 @@ import { Map, GoogleApiWrapper } from 'google-maps-react';
 import './RaceMap.css'
 
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
+const DEFAULT_ZOOM = parseInt(process.env.REACT_APP_DEFAULT_ZOOM);
 
 const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
-const MOTOR_CITY_BEER_SHEVA={lat: 31.273270, lng: 34.731834}
+//const MOTOR_CITY_BEER_SHEVA={lat: 31.273270, lng: 34.731834};
 const DEFAULT_LOCATION = GRIIIP_HOME;
 
 const mapStyles = {
@@ -35,12 +36,10 @@ const mapStyles = {
 class MapContainer extends Component {
     render() {
 
-      console.log(this.props)
-
       return (
         <Map
           google={this.props.google}
-          zoom={14}
+          zoom={DEFAULT_ZOOM}
           style={mapStyles}
           initialCenter={DEFAULT_LOCATION}
           center = {this.props.location}

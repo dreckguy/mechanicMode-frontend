@@ -12,6 +12,9 @@ const mapStateToProps = (state, ownProps) => {
         return[time,value];
     });
 
+if(!values.length){
+    values = [[new Date(),0]];
+}
     return {data:values, last:values[values.length-1]}
 }
 
@@ -35,14 +38,14 @@ const mapStateToProps = (state, ownProps) => {
 
 
 
-            this.state.chart = new Dygraph(this.refs.chart,this.props.data
+            this.setState({chart:new Dygraph(this.refs.chart,this.props.data
                 ,{
                     labels: [ "Time (ms)",this.props.label],
                     //drawPoints: true,
                     //dateWindow: getCurrentTimeRange(),
                     //axes:{x:{valueRange:getCurrentTimeRange()}}        
                     valueRange:[0,this.props.max]
-                  });
+                  })});
 
     }
 
