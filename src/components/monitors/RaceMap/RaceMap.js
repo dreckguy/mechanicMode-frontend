@@ -5,26 +5,30 @@ import './RaceMap.css'
 
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 
+const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
+const MOTOR_CITY_BEER_SHEVA={lat: 31.273270, lng: 34.731834}
+const DEFAULT_LOCATION = GRIIIP_HOME;
+
 const mapStyles = {
     width: '100vh',
     height: '100%'
   };
 
-  const GRIIIP_HOME={lat: 32.105208,long:34.898308}
+  
 
   const mapStateToProps = (state, ownProps) => {
 
 
     const last = state.last;
+    let newLocation;
 
-    if(!last){
-        return {lat:GRIIIP_HOME.lat, long:GRIIIP_HOME.long};
-    }
-
-      return {
-        lat: parseFloat(last["gps_lat"]),
-        long: parseFloat(last["gps_long"])
-      }
+    if(last){
+        newLocation =  {lat: parseFloat(last["gps_lat"]),lng: parseFloat(last["gps_long"])};
+      }else{
+          newLocation = DEFAULT_LOCATION;
+        }
+    
+        return {location: newLocation}
     }
 
 
@@ -38,10 +42,8 @@ class MapContainer extends Component {
           google={this.props.google}
           zoom={14}
           style={mapStyles}
-          initialCenter={{
-           lat: GRIIIP_HOME.lat,
-           lng: GRIIIP_HOME.long
-          }}
+          initialCenter={DEFAULT_LOCATION}
+          center = {this.props.location}
         />
       );
     }
