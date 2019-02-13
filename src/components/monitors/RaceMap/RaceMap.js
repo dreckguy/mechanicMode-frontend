@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux'
-import { Map, GoogleApiWrapper } from 'google-maps-react';
+import { Map,Marker,GoogleApiWrapper } from 'google-maps-react';
 import './RaceMap.css'
 
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -43,10 +43,18 @@ class MapContainer extends Component {
           style={mapStyles}
           initialCenter={DEFAULT_LOCATION}
           center = {this.props.location}
-        />
+        >
+        <Marker
+    name={'Your position'}
+    position={this.props.location}/>
+        </Map>
       );
     }
-  }
+
+    componentDidUpdate(prevProps, prevState, snapshot){
+        
+    }
+}
 
   export default GoogleApiWrapper({
     apiKey: GOOGLE_API_KEY
