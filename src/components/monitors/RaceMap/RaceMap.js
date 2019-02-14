@@ -41,6 +41,8 @@ class MapContainer extends Component {
           google={this.props.google}
           zoom={DEFAULT_ZOOM}
           style={mapStyles}
+          mapType="SATELLITE"
+          mapTypeControl={false}
           initialCenter={DEFAULT_LOCATION}
           center = {this.props.location}
         >
