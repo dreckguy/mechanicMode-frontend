@@ -11,7 +11,7 @@ class Dashboard extends Component{
     render(){
         return (<Container>
              <Row noGutters={true}><Col><ControlConsole/></Col><Col><RaceMap/></Col></Row>
-             <ChartsPanel/>
+             <Row><ChartsPanel/></Row>
             </Container>)
     }
 
