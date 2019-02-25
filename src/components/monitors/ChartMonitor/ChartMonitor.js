@@ -44,7 +44,9 @@ if(!values.length){
                     //drawPoints: true,
                     //dateWindow: getCurrentTimeRange(),
                     //axes:{x:{valueRange:getCurrentTimeRange()}}        
-                    valueRange:[0,this.props.max]
+                    valueRange:[0,this.props.max],
+                    axisLineColor: '#ffffff',
+                    colors: ['#2e9cee']
                   })});
 
     }

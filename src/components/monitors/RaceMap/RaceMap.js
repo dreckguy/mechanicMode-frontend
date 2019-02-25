@@ -12,7 +12,9 @@ const DEFAULT_LOCATION = GRIIIP_HOME;
 
 const mapStyles = {
     width: '100%',
-    height: '100%'
+    height: '300',
+    margin: 0,
+    paddin:0
   };
 
   
