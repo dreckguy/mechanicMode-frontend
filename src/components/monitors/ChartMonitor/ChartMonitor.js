@@ -30,7 +30,7 @@ if(!values.length){
 
 
     render() {
-        return <div ref="chart"></div>;
+        return <div ref="chart" className="chart"></div>;
     }
 
 

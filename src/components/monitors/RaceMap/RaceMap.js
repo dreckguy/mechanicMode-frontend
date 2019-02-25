@@ -11,7 +11,7 @@ const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
 const DEFAULT_LOCATION = GRIIIP_HOME;
 
 const mapStyles = {
-    width: '100vh',
+    width: '100%',
     height: '100%'
   };
 
