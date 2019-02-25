@@ -24,7 +24,7 @@ class GuageMonitor extends Component {
         return (
             <div>
 <ReactSpeedometer value={this.props.value} maxValue={this.props.max}
-startColor={BACKGROUND_COLOR} endColor={BACKGROUND_COLOR} textColor={BACKGROUND_COLOR} needleColor={MARKING_COLOR} segments={10} fluidWidth={true}/>
+startColor={BACKGROUND_COLOR} endColor={BACKGROUND_COLOR} textColor={BACKGROUND_COLOR} needleColor={MARKING_COLOR} segments={10} fluidWidth />
             </div>
         );
     }

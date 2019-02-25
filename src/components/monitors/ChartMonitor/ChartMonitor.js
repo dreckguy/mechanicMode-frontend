@@ -40,7 +40,7 @@ if(!values.length){
 
             this.setState({chart:new Dygraph(this.refs.chart,this.props.data
                 ,{
-                    labels: [ "Time (ms)",this.props.label],
+                    //labels: [ "Time (ms)",this.props.label],
                     //drawPoints: true,
                     //dateWindow: getCurrentTimeRange(),
                     //axes:{x:{valueRange:getCurrentTimeRange()}}        

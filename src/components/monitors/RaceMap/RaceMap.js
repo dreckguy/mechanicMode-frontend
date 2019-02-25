@@ -12,7 +12,7 @@ const DEFAULT_LOCATION = GRIIIP_HOME;
 
 const mapStyles = {
     width: '100%',
-    height: '300',
+    height: '100%',
     margin: 0,
     paddin:0
   };
@@ -38,7 +38,7 @@ const mapStyles = {
 class MapContainer extends Component {
     render() {
 
-      return (
+      return (<div className="map">
         <Map
           google={this.props.google}
           zoom={DEFAULT_ZOOM}
@@ -52,7 +52,7 @@ class MapContainer extends Component {
     name={'Your position'}
     position={this.props.location}/>
         </Map>
-      );
+      </div>);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot){
