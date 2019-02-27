@@ -6,8 +6,8 @@ const BACKGROUND_COLOR = "#5a4c76"
 const MARKING_COLOR="#e5e0e0"
 
 const gaugeStyles = {
-    height: '10vh',
-    width: '10vw'
+    height: '15vh',
+    width: '15vw'
 }
 
 
@@ -29,7 +29,7 @@ class GuageMonitor extends Component {
         return (
             <div style={gaugeStyles}>
 <ReactSpeedometer value={this.props.value} maxValue={this.props.max}
-startColor={BACKGROUND_COLOR} endColor={BACKGROUND_COLOR} textColor={BACKGROUND_COLOR} needleColor={MARKING_COLOR} segments={10} fluidWidth />
+startColor={BACKGROUND_COLOR} endColor={BACKGROUND_COLOR} textColor={MARKING_COLOR} needleColor={MARKING_COLOR} segments={10} fluidWidth />
             </div>
         );
     }
