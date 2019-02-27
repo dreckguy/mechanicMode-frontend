@@ -1,6 +1,6 @@
 div.chart{
-    height: 100%;
-    width: 100%;
+    height: 30vh;
+    width: 30vw;
     min-width: 1px;
 
     
@@ -8,7 +8,7 @@ div.chart{
 }
 
 .dygraphChart {
-    position: absolute;
+    position: relative;
     left: 1px;
     right: 1px;
     top: 1px;
