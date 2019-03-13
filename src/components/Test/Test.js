@@ -1,11 +1,13 @@
+
+
 import React, { Component } from 'react';
-import ChartsPanel from '../ChartsPanel' 
+import Registerer from '../Registerer';
 export default class Test extends Component{
 
     render(){
 
         return (<div>
-                <ChartsPanel/>
+                <Registerer/>
         </div>)
 
     }
