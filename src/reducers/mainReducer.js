@@ -29,7 +29,10 @@ export default (state = {}, action) => {
     
       return state;
     }
-        
+    
+    case 'MSG':
+    console.log(action.msg)
+    return {...state, msg: action.msg};
     default:
       return state;
   }

@@ -13,7 +13,7 @@ const SERVER_PREFACE = process.env.REACT_APP_SERVER_PREFACE
 
 const preloadedData = []
 
-const preloadedState = {data:preloadedData ,last:null};
+const preloadedState = {data:preloadedData ,last:null, registeredCar:0};
 
 
 
