@@ -9,6 +9,9 @@ const DEFAULT_ZOOM = parseInt(process.env.REACT_APP_DEFAULT_ZOOM);
 const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
 const DEFAULT_LOCATION = GRIIIP_HOME;
 
+const MARKING_COLOR = "#e90344"
+
+
 const mapStyles = {
     width: '100%',
     height: '100%',
@@ -52,7 +55,7 @@ class MapContainer extends Component {
     position={this.props.location}
     icon={{
       path: this.props.google.maps.SymbolPath.CIRCLE,
-      fillColor: '#FF0000',
+      fillColor: MARKING_COLOR,
       fillOpacity: 0.9,
       strokeColor: 'black',
       strokeOpacity: 0.9,
