@@ -46,6 +46,10 @@ class MapContainer extends Component {
           zoom={DEFAULT_ZOOM}
           style={mapStyles}
           mapType="SATELLITE"
+          fullscreenControl={false}
+          streetViewControl={false}
+          zoomControl = {false}
+          
           mapTypeControl={false}
           initialCenter={DEFAULT_LOCATION}
           center = {this.props.location}
