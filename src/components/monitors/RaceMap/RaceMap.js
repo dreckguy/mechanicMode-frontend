@@ -8,7 +8,6 @@ const DEFAULT_ZOOM = parseInt(process.env.REACT_APP_DEFAULT_ZOOM);
 
 const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
 const DEFAULT_LOCATION = GRIIIP_HOME;
-const MARKER_ICON_PATH = 'marker.ico';
 
 const mapStyles = {
     width: '100%',

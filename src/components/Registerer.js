@@ -31,9 +31,6 @@ class Registerer extends Component{
 
         return (<div>
             <p><input placeholder={INPUT_MESSAGE} onChange={this.props.register}/></p>
-            <p>data from server:</p>
-            <p>{this.props.msg}</p>
-            
         </div>)
     }
 
