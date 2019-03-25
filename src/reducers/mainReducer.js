@@ -28,8 +28,8 @@ export default (state = {}, action) => {
       return state;
     }
     
-    case 'MSG':
-    return {...state, msg: action.msg};
+    case 'FETCH_ACTIVE_CARS':
+    return {...state, activeCars: action.activeCars};
     default:
       return state;
   }

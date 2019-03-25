@@ -1,14 +1,12 @@
 import {connect} from 'react-redux'
 import React, { Component } from 'react';
-const INPUT_MESSAGE='Car Number';
 
 const mapStateToProps = (state, ownProps) => {
-    return {msg: state.msg}
+    return {cars: state.activeCars}
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-      // dispatching plain actions
       register: (event) => {
           let value = event.target.value;
           if(value){
@@ -28,10 +26,20 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 class Registerer extends Component{
 
     render(){
+      const cars = this.props.cars
+      console.log(cars);
+      const MakeItem = function(X) {
+        return <option>{X}</option>;
+    };
 
-        return (<div>
-            <p><input placeholder={INPUT_MESSAGE} onChange={this.props.register}/></p>
-        </div>)
+    if(cars){
+      return <select>{cars.map(MakeItem)}</select>;
+
+
+    }else{
+      return <div>No Cars to show</div>
+    }
+
     }
 
 
