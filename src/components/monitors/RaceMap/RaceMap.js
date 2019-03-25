@@ -7,8 +7,8 @@ const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const DEFAULT_ZOOM = parseInt(process.env.REACT_APP_DEFAULT_ZOOM);
 
 const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
-//const MOTOR_CITY_BEER_SHEVA={lat: 31.273270, lng: 34.731834};
 const DEFAULT_LOCATION = GRIIIP_HOME;
+const MARKER_ICON_PATH = 'marker.ico';
 
 const mapStyles = {
     width: '100%',
@@ -50,7 +50,17 @@ class MapContainer extends Component {
         >
         <Marker
     name={'Your position'}
-    position={this.props.location}/>
+    position={this.props.location}
+    icon={{
+      path: this.props.google.maps.SymbolPath.CIRCLE,
+      fillColor: '#FF0000',
+      fillOpacity: 0.9,
+      strokeColor: 'black',
+      strokeOpacity: 0.9,
+      strokeWeight: 1,
+      scale: 3
+  }}
+    />
         </Map>
       </div>);
     }
