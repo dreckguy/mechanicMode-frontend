@@ -8,7 +8,7 @@ export default (state = {}, action) => {
     newData.time = new Date(newData.Timestamp);
     let last = state.last;
     if(!last){
-      return {data:[newData],last:newData};
+      return {...state,data:[newData],last:newData};
     }
 
     if(newData.time>last.time){
@@ -21,12 +21,13 @@ export default (state = {}, action) => {
         state.data.shift();
       }
 
-      return {data:data,last:last};
+      return {...state,data:data,last:last};
 
     }else{
     
       return state;
     }
+    
     
     case 'FETCH_ACTIVE_CARS':
     return {...state, activeCars: action.activeCars};

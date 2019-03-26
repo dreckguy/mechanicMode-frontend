@@ -25,7 +25,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 class Registerer extends Component{
 
     render(){
-      const cars = this.props.cars;
+      let cars = this.props.cars;
 
     if(cars){
       let index = 0;
