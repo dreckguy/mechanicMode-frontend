@@ -12,28 +12,28 @@ const mapDispatchToProps = (dispatch, ownProps) => {
           if(value){
             dispatch({ type: 'SERVER/REGISTER', carNumber:value})
 
+
+          }
+          
           }
 
 
     }
+  
   }
-  }
-
-
-
-
 
 class Registerer extends Component{
 
     render(){
-      const cars = this.props.cars
-      console.log(cars);
-      const MakeItem = function(X) {
-        return <option>{X}</option>;
-    };
+      const cars = this.props.cars;
 
     if(cars){
-      return <select>{cars.map(MakeItem)}</select>;
+      let index = 0;
+      const options = cars.map((car)=>{
+        return <option value={car} key={index++}>{car}</option>
+      });
+
+      return <select onChange={this.props.register}>{options}</select>;
 
 
     }else{
@@ -42,9 +42,6 @@ class Registerer extends Component{
 
     }
 
-
 }
-
-
 
 export default  connect(mapStateToProps,mapDispatchToProps)(Registerer);
