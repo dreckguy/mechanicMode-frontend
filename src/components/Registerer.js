@@ -33,11 +33,11 @@ class Registerer extends Component{
         return <option value={car} key={index++}>{car}</option>
       });
 
-      return <select onChange={this.props.register}>{options}</select>;
+      return <h6><label>Racing Number: &nbsp; </label><select onChange={this.props.register}>{options}</select></h6>
 
 
     }else{
-      return <div>No Cars to show</div>
+      return <div>Loading...</div>
     }
 
     }
