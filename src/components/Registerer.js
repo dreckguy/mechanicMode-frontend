@@ -28,7 +28,12 @@ class Registerer extends Component{
       if(cars){
       let index = 0;
       const options = cars.map((car)=>{
-        return <option value={car.carNumber} key={index++}>{car.racingNumber}</option>
+        let carNumber = car.carNumber;
+        let racingNumber = car.racingNumber;
+        if(!racingNumber){
+          racingNumber = `Car Number ${carNumber}`;
+        }
+        return <option value={carNumber} key={index++}>{racingNumber}</option>
       });
 
       return <h6><label>Racing Number: &nbsp; </label><select onChange={this.props.register}>{options}</select></h6>
