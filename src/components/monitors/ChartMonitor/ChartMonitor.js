@@ -10,14 +10,21 @@ const mapStateToProps = (state, ownProps) => {
 
 
         let time = data.time;
-        let value = parseFloat(data[ownProps.dataField]);
+        let value = parseFloat(data[ownProps.dataField])
         return[time,value];
     });
+
 
 if(!values.length){
     values = [[new Date(),0]];
 }
-    return {data:values, last:values[values.length-1]}
+
+const last = state.last;
+let lastValue ='0';
+if(last){
+    lastValue = Number.parseFloat(state.last[ownProps.dataField]).toFixed(3);
+}
+    return {data:values, value:lastValue};
 }
 
  class ChartMonitor extends Component {
