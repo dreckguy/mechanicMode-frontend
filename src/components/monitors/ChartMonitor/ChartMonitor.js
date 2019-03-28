@@ -22,7 +22,7 @@ if(!values.length){
 const last = state.last;
 let lastValue ='0';
 if(last){
-    lastValue = Number.parseFloat(state.last[ownProps.dataField]).toFixed(3);
+    lastValue = Number.parseFloat(state.last[ownProps.dataField]).toFixed(1);
 }
     return {data:values, value:lastValue};
 }
