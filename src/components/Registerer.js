@@ -12,7 +12,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
           if(value){
             dispatch({ type: 'SERVER/REGISTER', carNumber:value})
 
-
           }
           
           }
@@ -26,11 +25,10 @@ class Registerer extends Component{
 
     render(){
       let cars = this.props.cars;
-
-    if(cars){
+      if(cars){
       let index = 0;
       const options = cars.map((car)=>{
-        return <option value={car} key={index++}>{car}</option>
+        return <option value={car.carNumber} key={index++}>{car.racingNumber}</option>
       });
 
       return <h6><label>Racing Number: &nbsp; </label><select onChange={this.props.register}>{options}</select></h6>

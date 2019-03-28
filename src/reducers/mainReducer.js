@@ -30,7 +30,7 @@ export default (state = {}, action) => {
     
     
     case 'FETCH_ACTIVE_CARS':
-    return {...state, activeCars: action.activeCars};
+    return {...state, activeCars: action.activeCars}
     default:
       return state;
   }
