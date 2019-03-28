@@ -34,7 +34,7 @@ if(!values.length){
     render() {
         return (<div>
             <h6>{this.props.label}: {this.props.value}</h6>
-                    <div ref="chart" className="chart"></div>;
+                    <div ref="chart" className="chart"></div>
         </div>) 
         
     }
