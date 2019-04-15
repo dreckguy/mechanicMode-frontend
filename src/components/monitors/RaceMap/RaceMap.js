@@ -5,6 +5,7 @@ import './RaceMap.css'
 
 const GOOGLE_API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const DEFAULT_ZOOM = parseInt(process.env.REACT_APP_DEFAULT_ZOOM);
+const TRAIL_MAX_POINTS = parseInt(REACT_APP_MAP_TRAIL_MAX_POINTS);
 
 const GRIIIP_HOME={lat: 32.105208,lng:34.898308}
 const DEFAULT_LOCATION = GRIIIP_HOME;
@@ -32,8 +33,13 @@ const mapStyles = {
       }else{
           newLocation = DEFAULT_LOCATION;
         }
+
+        const lastValues = state.data.slice(TRAIL_MAX_POINTS).map((data)=>{
+          return {lat: parseFloat(data["gps_lat"]),lng: parseFloat(data["gps_long"])};
+
+        });
     
-        return {location: newLocation}
+        return {location: newLocation, trail:lastValues}
     }
 
 
