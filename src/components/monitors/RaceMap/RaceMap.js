@@ -83,7 +83,7 @@ class MapContainer extends Component {
   path={this.props.trail} 
   options={{ 
   strokeColor: '#201a2d',
-  strokeOpacity: 0.5,
+  strokeOpacity: 0.8,
   strokeWeight: 4
 }}
 />
