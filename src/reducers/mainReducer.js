@@ -5,7 +5,7 @@ export default (state = {}, action) => {
     case 'FETCH_DATA':
 
     let newData = action.data;
-    console.log(newData);
+    //console.log(newData);
     newData.time = new Date(newData.Timestamp);
     let last = state.last;
     if(!last){
