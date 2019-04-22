@@ -3,6 +3,18 @@ import React, {Component} from 'react';
 import Dygraph from 'dygraphs';
 import './ChartMonitor.css';
 
+function getCurrentTimeRange(){
+    let now = Date.now();
+    let twoMinutesAgo = Date.now() - 2 * 60 * 1000;
+    return [twoMinutesAgo, now];
+
+    const CHART_DURATION = parseInt(process.env.REACT_APP_CHART_DURATION)
+    console.log(`chart duration: ${CHART_DURATION}`);
+
+
+}
+
+
 const mapStateToProps = (state, ownProps) => {
     let values = state.data.map((data) => {
         let time = data.time;
@@ -44,15 +56,12 @@ class ChartMonitor extends Component {
     }
 
     componentDidMount() {
-        console.log("DATA: ");
-        console.log(this.props.data);
         this.setState({
             chart: new Dygraph(this.refs.chart, this.props.data,
                 {
                     labels: [ "Time (ms)",this.props.label],
                     drawPoints: true,
-                    //dateWindow: getCurrentTimeRange(),
-                    //axes:{x:{valueRange:getCurrentTimeRange()}}
+                    dateWindow: getCurrentTimeRange(),
                     valueRange: [0, this.props.max],
                     axisLineColor: '#ffffff',
                     colors: ['#2e9cee'],
@@ -64,8 +73,7 @@ class ChartMonitor extends Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.state.chart.updateOptions({
             'file': this.props.data,
-            //dateWindow: getCurrentTimeRange(),
-            //axes:{x:{valueRange:getCurrentTimeRange()}}
+            dateWindow: getCurrentTimeRange(),
         });
     }
 }
