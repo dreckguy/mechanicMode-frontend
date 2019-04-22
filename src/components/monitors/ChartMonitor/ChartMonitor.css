@@ -1,10 +1,7 @@
 div.chart{
     height: 20vh;
-    width: 30vw;
+    width: 100%;
     min-width: 1px;
-
-    
-
 }
 
 .dygraphChart {
@@ -18,5 +15,47 @@ div.chart{
     min-width: 1px;
     padding: 3px;
     margin: 3px;
-    
   }
+
+.chart-label{
+    display: inline-block;
+    width: 100%;
+}
+.chart-label-left{
+    margin-left: 58px;
+    display: inline;
+    float: left;
+}
+
+.chart-label-right{
+    display: inline;
+    text-align: right !important;
+    margin-right: 20px;
+    float: right;
+}
+
+.pt-30{
+    padding-top: 30px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+
+.dygraph-legend {
+    background-color: rgba(200, 200, 255, 0.75) !important;
+    padding: 4px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #888;
+    pointer-events: none;
+    width: 380px;
+}
+pre {
+    margin-top: 30px;
+}
+.dygraph-axis-label {
+    color: #FFFFFF
+}

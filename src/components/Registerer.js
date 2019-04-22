@@ -10,16 +10,11 @@ const mapDispatchToProps = (dispatch, ownProps) => {
       register: (event) => {
           let value = event.target.value;
           if(value){
-            dispatch({ type: 'SERVER/REGISTER', carNumber:value})
-
+              dispatch({ type: 'SERVER/REGISTER', carNumber:value})
           }
-          
-          }
-
-
+      }
     }
-  
-  }
+}
 
 class Registerer extends Component{
 

@@ -1,0 +1,12 @@
+.gauges svg{
+    display: inline;
+    width: 48%;
+}
+.gauges div:first-child{
+    display: inline-block;
+    float: right;
+}
+.gauges div:nth-child(2){
+    display: inline-block;
+    float: right;
+}

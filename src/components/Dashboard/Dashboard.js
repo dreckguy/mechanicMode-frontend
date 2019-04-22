@@ -9,9 +9,19 @@ import ChartsPanel from '../ChartsPanel'
 class Dashboard extends Component{
 
     render(){
-        return (<Container fluid={true}>
-             <Row><Col><ControlConsole/></Col><Col><RaceMap/></Col></Row>
-             <Row><ChartsPanel/></Row>
+        return (
+            <Container fluid={true}>
+                <Row>
+                    <Col xs="6">
+                        <ControlConsole/>
+                    </Col>
+                    <Col xs ="6">
+                        <RaceMap/>
+                    </Col>
+                </Row>
+                <Row>
+                    <ChartsPanel/>
+                </Row>
             </Container>)
     }
 

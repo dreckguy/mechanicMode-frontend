@@ -7,13 +7,13 @@ require('dotenv').config();
 
 
 class App extends Component {
-
- render() {
-
-  return (
-    <Container>
-      <Dashboard/>
-</Container>);
- }
+    render() {
+        return (
+            <Container fluid={true}>
+                <Dashboard/>
+            </Container>
+        );
+    }
 }
+
 export default App;

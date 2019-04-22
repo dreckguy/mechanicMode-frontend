@@ -2,14 +2,14 @@ import {connect} from 'react-redux'
 import React, { Component } from 'react';
 import Gauge from 'react-svg-gauge';
 
-const MARKING_COLOR = "#2e9cee"
-const TEXT_COLOR="#e5e0e0"
+const MARKING_COLOR = "#2e9cee";
+const TEXT_COLOR="#e5e0e0";
 
 const valueStyle = {
     fontSize: '1.8vw',
     fill: TEXT_COLOR,
     fontWeight: 600
-}
+};
 
 const labelStyle={fill: TEXT_COLOR,
                   fontSize: '1vw',
