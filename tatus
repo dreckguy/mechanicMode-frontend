@@ -1,0 +1,533 @@
+[33mcommit f6e97db0dd6d603e24fcab2ac565a40a0491c916[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Apr 22 13:52:41 2019 +0300
+
+    set charts to 2 minutes
+
+[33mcommit ff045a80c2d3da1cb0cbcba8b91d0b7bf6f59e43[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Apr 22 10:44:17 2019 +0300
+
+    get back race map trail
+
+[33mcommit 0ea86f23c59ff2842a4f33fb3adcd4e832587522[m[33m ([m[1;32mstyling[m[33m)[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Apr 22 10:12:34 2019 +0300
+
+    get fiverr styling
+
+[33mcommit c4e0973a6fe0b15dbce980d3736db1ed7be3e3aa[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Apr 18 14:15:46 2019 +0300
+
+    change to 600 trail points
+
+[33mcommit 1f16f9276ebef17755e5f349637bd462940b5125[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Apr 18 13:54:36 2019 +0300
+
+    streighten opacity of trail
+
+[33mcommit 5356bea510f0dc9296a9e73afffbe4fc078eb326[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Apr 18 13:49:23 2019 +0300
+
+    add trail to map
+
+[33mcommit 34bae9024ad1dee9845f4ca1ceef57167ac5e1f1[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Apr 15 20:25:10 2019 +0300
+
+    define trail in the map
+
+[33mcommit 1b1902ef984f28a4af2665c3b7654e9d9938b352[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 28 17:53:23 2019 +0200
+
+    change to 1 digit sfter dot in value of charts
+
+[33mcommit 8e1e32f6f1000171146af76b503866bb53d12e3f[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 28 17:33:20 2019 +0200
+
+    show value in charts
+
+[33mcommit efcc3e05119dd9912674d039496028b84833b007[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 28 16:12:14 2019 +0200
+
+    presenting racing number in registerer
+
+[33mcommit 83d96797b6fe36014e5d8e9b0f70fbeac86c8d94[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 28 15:44:30 2019 +0200
+
+    print real racing number in registerer
+
+[33mcommit ad5ea8839dceaef70d8cf984802df836e5b2c0e9[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 28 04:32:34 2019 +0200
+
+    remove ;
+
+[33mcommit da037a25ab66e0109f80709959a9bd98e6b82091[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Mar 27 15:29:27 2019 +0200
+
+    add titles to charts
+
+[33mcommit d4103e5b2caf11b7fea25dd13519a40c3bde7da8[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Mar 27 15:07:51 2019 +0200
+
+    add label to registerer
+
+[33mcommit 37994cbfbae0321fe5566298a443119725491a99[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Mar 26 10:52:56 2019 +0200
+
+    fix registerer bug
+
+[33mcommit 545f38161bd2fafc50c8518e6aaea754a1701cba[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Mar 26 10:14:43 2019 +0200
+
+    change registerer to select
+
+[33mcommit ad610bf3a782adbb2376bd0a49c1e4b186a500f9[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Mar 26 09:14:49 2019 +0200
+
+    registerer is working locally
+
+[33mcommit d33a6270cb50ea94281177790a02b48ca1eac037[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 21:17:56 2019 +0200
+
+    getting cars from server
+
+[33mcommit c25a88d4fde04b8f0d1b82d045734092c0510199[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 17:06:31 2019 +0200
+
+    remove log of channel
+
+[33mcommit f556463920ff2b38c443ed7cde9afda1b13dab94[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 16:13:38 2019 +0200
+
+    disable map control
+
+[33mcommit b022d6bb634ddb556476484479418d4c41d060cb[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 15:54:52 2019 +0200
+
+    style gauge
+
+[33mcommit 599e11e6b59abe1af592baefa6f53d926afddb78[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 13:26:19 2019 +0200
+
+    change gauge lib
+
+[33mcommit 9c2b0b62028b261e2b8f5a4ad8778c5dc94550aa[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Mar 25 10:42:07 2019 +0200
+
+    change map marker to a red dot
+
+[33mcommit 0f3b989e001bceec9c8e51a0c69c3d7794793c2a[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 21 09:32:03 2019 +0200
+
+    add registerer to dashboard
+
+[33mcommit 7632520831877e2e086877d58e2a3b77c9ff2ca1[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Mar 21 09:16:22 2019 +0200
+
+    reference backend
+
+[33mcommit 67b1c0159e02910e38d0bd455cdab7f149e2efdb[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Mar 13 15:19:47 2019 +0200
+
+    show channel messages
+
+[33mcommit e394333d6e1c9c8f0511bf6ccc12d5586fd6d4e7[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Mar 13 08:22:57 2019 +0200
+
+    introduce the registerer
+
+[33mcommit 44939f9f084b4899f49cd76a501275916c27f877[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 27 14:01:30 2019 +0200
+
+    put 6 graphs without rolling
+
+[33mcommit 6bfab1bcb97d38aa581742f950a009222f733ce9[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 27 11:54:24 2019 +0200
+
+    fix relativr size of charts
+
+[33mcommit 3a1a56d3dcfebac9807aa70f429109fda5cae8e2[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 27 06:33:28 2019 +0200
+
+    locked gauges inside a div
+
+[33mcommit c05188c1c1675f4710b3b4ef53cc42b9e49c9767[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 27 05:58:24 2019 +0200
+
+    locked gauges inside a div
+
+[33mcommit bf6362afc738e36fef624f25f46fbb9386a5526a[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 25 18:03:47 2019 +0200
+
+    put map inside a div
+
+[33mcommit 7a78754385e4e332ba8a88d56e17e7ca4b8a1338[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 25 15:57:12 2019 +0200
+
+    change chart colors
+
+[33mcommit 9d100d39fc6ce7dbaef8451ae9d210e21180044d[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 25 15:08:33 2019 +0200
+
+    layout is somehow ok
+
+[33mcommit b62743e52be1b1e493179cd4675809d26589fef2[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 25 15:05:47 2019 +0200
+
+    define text color
+
+[33mcommit 71c6f4b1642513f471846e8fc4da7cfb1531954a[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 25 14:56:55 2019 +0200
+
+    put everything in rows inside each container
+
+[33mcommit 8209ac29f44fadc767e8072505593ded83e150c7[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Fri Feb 15 11:10:13 2019 +0200
+
+    add publish ps script
+
+[33mcommit 6360e2abb798cd5f6a579339fbaf284d993ffa56[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Thu Feb 14 10:45:44 2019 +0200
+
+    fix map type on satellite
+
+[33mcommit 637f5a646319b7b2647ecb8b3ede2448f85f4f75[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 13 14:21:23 2019 +0200
+
+    fix marker
+
+[33mcommit 7a4aac54cee015294ff923d42f38feb8e0f046dc[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 12 15:11:54 2019 +0200
+
+    fix some issues
+
+[33mcommit e3ad08ae6662a20a1cc0ba822b8fb4e3f6e124b0[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 12 09:54:10 2019 +0200
+
+    getting map from backend
+
+[33mcommit 7b19eb713b160386414be83db13b7194c6e4f901[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 11 11:18:14 2019 +0200
+
+    connect map
+
+[33mcommit 0a80ab454ed94491902c82237863807213fc7df4[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 11 10:21:55 2019 +0200
+
+    clean unneeded dependancies
+
+[33mcommit 668f5cdfdc6f7867c690fccc9f6e37b955624c88[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 11 10:19:50 2019 +0200
+
+    remove unused variables
+
+[33mcommit 7eeb8121e388cd0053418779f93f5fcf3f9e0012[m[33m ([m[1;33mtag: 11.2.2019[m[33m)[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 10 15:35:26 2019 +0200
+
+    define max range for charts
+
+[33mcommit f272cf70129088c15d15a2cda5ab4c145b8b0326[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 6 21:19:16 2019 +0200
+
+    connect charts with bugs
+
+[33mcommit e0b4bea14dee0a6be408d95ba4a3385a28db7819[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 6 18:58:42 2019 +0200
+
+    connect the gauges again
+
+[33mcommit d513dd171eb93dc2c3e7ebd30e1dfbe0aa2a425d[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Feb 6 18:43:17 2019 +0200
+
+    start from yarin lap static data
+
+[33mcommit cb5f02e7eb7541f44d6730e095db2967b27f4044[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 5 18:38:04 2019 +0200
+
+    static charts and connected gauges
+
+[33mcommit b3ed26e3fc9c2cfa565987bb547d298a3171f5f7[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 5 15:58:16 2019 +0200
+
+    connect gauge to real data!
+
+[33mcommit cd9d8a1dcc522ba0f5723cae351cc198ca60aef8[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 5 14:42:23 2019 +0200
+
+    remove values more than max var
+
+[33mcommit 7f1d409ca96310c20c85a1b707bbfa6106cc1ffd[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Feb 5 13:17:34 2019 +0200
+
+    changed walkaround to main brunch
+
+[33mcommit 98fcbf4380458e7adb8ef2d68597a1605ea59b54[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 4 16:36:31 2019 +0200
+
+    turned data into arrays of values
+
+[33mcommit 58d56083108902a4770807bbad3604e3b539c38a[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 4 12:49:00 2019 +0200
+
+    walktnhrough a docker npm clash with a walkthrough dockerfile on port 300 instead of 80
+
+[33mcommit faf292f15671517cc6f8a97cfc24eda1966d3f4f[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Feb 4 00:20:59 2019 +0200
+
+    add nice guages
+
+[33mcommit 8534c7daeb77307245d7a2aad6c154df8951144b[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 3 22:26:17 2019 +0200
+
+    show all 6 charts
+
+[33mcommit c08799345450f52908b5a9b9d1f840b3951c5dea[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 3 21:54:53 2019 +0200
+
+    chartMonito is working!
+
+[33mcommit 5e22976b49de79f571a57d20ebabf514096aef9d[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 3 11:00:07 2019 +0200
+
+    succeed suplying options to dygraphs
+
+[33mcommit f1a1dc9971f27a346d4148c243d70e097333bb6f[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 3 10:13:02 2019 +0200
+
+    succeed using dygraph!
+
+[33mcommit 9a60902f926ba1b242461d4f13321139ebd89ace[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Feb 3 08:39:18 2019 +0200
+
+    add powershell script
+
+[33mcommit 2951809974cbebe4b372c1fdde0d47294f04bf50[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sat Feb 2 22:17:05 2019 +0200
+
+    test docker hub
+
+[33mcommit 22fa22fb77e65a83e82774ccf6229970ecfc6445[m
+Author: dreckguy <dreckguy@gmail.com>
+Date:   Sat Feb 2 22:11:06 2019 +0200
+
+    Create test.txt
+
+[33mcommit e89b41bbc03894fc4d2131e2997d262a42a24dac[m[33m ([m[1;33mtag: test[m[33m, [m[1;33mtag: 31.1.2019[m[33m)[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 23:21:25 2019 +0200
+
+    change to griiip favicon and title
+
+[33mcommit 00c6913836ff321f711675b69c94db117139ac21[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 18:03:45 2019 +0200
+
+    delete log
+
+[33mcommit dad81375bd257a98d9f6171ccb7b5e7a15ed8cb2[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 18:02:47 2019 +0200
+
+    google maps is working
+
+[33mcommit fe421494d80de40d25a491e01275289761296f92[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 15:32:46 2019 +0200
+
+    change latency to milliseconds
+
+[33mcommit b28e7f35788a45cfd094f93af193c55902af1369[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 14:25:50 2019 +0200
+
+    latency monitor is working corectly!
+
+[33mcommit 847cebe7bf4925e89b1b9c8c7db68b814bc0bef5[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 28 13:11:10 2019 +0200
+
+    add latency monitor
+
+[33mcommit 989b7693f3e48c718b8818e9e39ba0d68beacd24[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Jan 27 22:41:02 2019 +0200
+
+    remove env from dockerfile
+
+[33mcommit ef22cf9e19812683ff1230a6981afe63b7948349[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Jan 27 22:26:45 2019 +0200
+
+    fix backend address
+
+[33mcommit d8667d9e8d52f04ce609571ebdc2c277d3064c69[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Jan 27 21:30:44 2019 +0200
+
+    remove id
+
+[33mcommit d9a1f1616c63ee1db2ef8b0735624f9b441dec5f[m
+Author: Ophirus Magnivus <dreckguy@gmail.com>
+Date:   Sun Jan 27 21:08:59 2019 +0200
+
+    remove id
+
+[33mcommit d54e613a91ce64782fbdb5f69da3f194a8c90176[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Fri Jan 25 09:13:19 2019 +0200
+
+    moved server prefix to env file and changed to uppercase
+
+[33mcommit c58125695629cae9f01c04e4b20599d9fd1b9232[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Jan 23 14:39:38 2019 +0200
+
+    styled the page for test
+
+[33mcommit 7d365b2e2cecc8fd2eea70cfdd0c39b1a320b49d[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Jan 23 04:51:29 2019 +0200
+
+    set default backend address to localhost and docker to cloud address. set default socket ip to 8081
+
+[33mcommit 5ea714ea594599c92c3787790d2f780687dec209[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 14:40:54 2019 +0200
+
+    connect to cloud backend
+
+[33mcommit ce2f49f1bb757f629776d36ed7a0af197b86f7a3[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 13:00:03 2019 +0200
+
+    set socket port as static
+
+[33mcommit 405a67e45087947a08ae79fd3eb172b711746368[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 12:30:24 2019 +0200
+
+    moved backend address and socket port to docker environments
+
+[33mcommit dd601bcce3faf9b676d7207bc7431bb2ce721c0e[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 11:14:34 2019 +0200
+
+    fetching data correctly
+
+[33mcommit 976a8f9f7a2c6d9b25cc1578b9ece95bf7a79402[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 09:25:25 2019 +0200
+
+    remove backend side
+
+[33mcommit 7136e523838939d87d96ce9c9d3983049ea81c1a[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Tue Jan 22 02:48:04 2019 +0200
+
+    connect to server
+
+[33mcommit 328d60316b7e5113fada4b0df3c01209fe1d98f0[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Mon Jan 21 03:54:44 2019 +0200
+
+    setting fetching data flow
+
+[33mcommit f24949a14b47d5a31ff1bbc33d8e041e7a4bdab6[m
+Author: ophirus Magnivus <dreckguy@gmail.com>
+Date:   Wed Jan 16 22:42:31 2019 +0200
+
+    dockerizing app
+
+[33mcommit 2b6cc21938c96d33756c339465e7034f65ab46ec[m
+Author: ophir <devteam@wizer.me>
+Date:   Sun Jan 13 22:50:40 2019 +0200
+
+    add layout to app
+
+[33mcommit 69db767dc22a6a26f94daf20b17f777d8b2da26a[m
+Author: ophir <devteam@wizer.me>
+Date:   Sat Jan 12 08:09:24 2019 +0200
+
+    add redux to project
+
+[33mcommit 14dec1135b60bd8ad4c37c6035abf781e0ec1c64[m
+Author: ophir <devteam@wizer.me>
+Date:   Fri Jan 11 10:27:16 2019 +0200
+
+    add bootstrap for react
+
+[33mcommit e10b33e7dcca0f6510accf01a36a2ef8ed0bf079[m
+Author: ophir <devteam@wizer.me>
+Date:   Fri Jan 11 09:35:35 2019 +0200
+
+    Initial commit from Create React App
+
+[33mcommit 9b425b6d0c19b35aadf1cfb3a153e6bdc7e62d84[m
+Author: dreckguy <dreckguy@gmail.com>
+Date:   Fri Jan 11 09:35:55 2019 +0200
+
+    delete before pushing ready react-app
+
+[33mcommit 7d2d875819de2117f086964427e3eaa914a1cb0c[m
+Author: dreckguy <dreckguy@gmail.com>
+Date:   Fri Jan 11 09:31:08 2019 +0200
+
+    Initial commit

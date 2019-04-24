@@ -76,14 +76,14 @@ class MapContainer extends Component {
   }}
     />
 
-<Polyline
+{/*<Polyline
   path={this.props.trail} 
   options={{ 
   strokeColor: '#201a2d',
   strokeOpacity: 0.8,
   strokeWeight: 4
 }}
-/>
+>*/}
 
         </Map>
       </div>);
