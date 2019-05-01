@@ -61,7 +61,7 @@ class ChartMonitor extends Component {
                 {
                     labels: [ "Time (ms)",this.props.label],
                     drawPoints: true,
-                    dateWindow: getCurrentTimeRange(),
+                    //dateWindow: getCurrentTimeRange(),
                     valueRange: [0, this.props.max],
                     axisLineColor: '#ffffff',
                     colors: ['#2e9cee'],
@@ -73,7 +73,7 @@ class ChartMonitor extends Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         this.state.chart.updateOptions({
             'file': this.props.data,
-            dateWindow: getCurrentTimeRange(),
+            //dateWindow: getCurrentTimeRange(),
         });
     }
 }

@@ -38,10 +38,10 @@ const mapStyles = {
         const lastValues = state.data.slice(-TRAIL_MAX_POINTS).map((data)=>{
           return {lat: parseFloat(data["gps_lat"]),lng: parseFloat(data["gps_long"])};
 
-        });
+        }); 
 
     
-        return {location: newLocation, trail:lastValues}
+        return {location: newLocation ,trail:lastValues}
     }
 
 
@@ -75,16 +75,14 @@ class MapContainer extends Component {
       scale: 3
   }}
     />
-
-{/*<Polyline
+<Polyline
   path={this.props.trail} 
   options={{ 
   strokeColor: '#201a2d',
   strokeOpacity: 0.8,
   strokeWeight: 4
 }}
->*/}
-
+/>
         </Map>
       </div>);
     }
